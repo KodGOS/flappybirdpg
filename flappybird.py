@@ -222,14 +222,14 @@ while game:
     if tubexpos != -75:
         tubexpos -= 3
         birdtouchcheck -= 3
-        if tubexpos < -72:     #проверка прохождения через трубы
+        if tubexpos < -72:
             tubedownypos = randint(210,420)
             tubeupypos = tubedownypos - 542
             tubexpos = 351
             birdtouchcheck = 0
             score += 1
         if birdtouchcheck > -390 and birdtouchcheck < -288:
-            if tubedownypos < birdy + 36: #проверка проигрыша от нижней трубы
+            if tubedownypos < birdy + 36:
                 birdx = 15
                 birdy = 218
                 falltime = 0
@@ -241,7 +241,7 @@ while game:
                 score = 0
                 numleft = 0
                 numright = 0
-            if tubeupypos + 402 > birdy: #проверка проигрыша от вверхней трубы
+            if tubeupypos + 402 > birdy:
                 birdx = 15
                 birdy = 218
                 falltime = 0
